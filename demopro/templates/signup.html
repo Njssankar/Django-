@@ -1,0 +1,17 @@
+<html>
+    <title>signup form</title>
+
+    <body>
+        <form method="post" action="">
+            {% csrf_token %}
+            <input type="text" name="name" id="name" placeholder="enter name" required/><br/>
+            <input type="text" name="email" id="email" placeholder="enter email"required /><br/>
+            <label>Male</label>
+            <input type="radio" name="gender" id="male" value="male"/>
+            <label>FeMale</label>
+            <input type="radio" name="gender" id="female" value="female"/><br/>
+            <input type="date" name="dob" id="dob" required /><br/>
+            <input type="submit" />
+        </form>
+    </body>
+</html>
